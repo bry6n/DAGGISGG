@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('pixelated.ttf');
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 90px;
+    background-repeat: repeat;
+}
+
+header img {
+    height: 250px; 
+}
+
+hr {
+    border: none;
+    border-top: 4px solid black;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit; 
+    font-family: 'CustomFont';
+    font-size: 40px;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+

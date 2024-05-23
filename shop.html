@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAGGIS | MICE </title>
+    <link rel="stylesheet" href="design.css">
+    <link rel="icon" href="dggsFav.png" type="image/x-icon">
+    <link rel="shortcut icon" href="dggsFav.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <img src="DAGGIS.png">
+        <nav>
+            <a href="index.html"><div>HOME</div></a>
+            <a href="shop.html"><div>SHOP</div></a>
+            <a href="info.html"><div>DAGGIS</div></a>
+        </nav>
+        <button class="special-button" onclick="showCart()">🖱</button>   
+</header>
+<hr>
+<h1> DAGGIS MOUSE AND MICES</h1>
+    <main>
+        <section class="product">
+            <img src="Viper.webp" alt="Product 1">
+            <h2>Razer Viper V3 Pro Ultra-Lightweight</h2>
+            <p>₱9,495</p>
+            <button onclick="addToCart('Razer Viper V3 Pro Ultra-Lightweight', 9495)">Add to Cart </button>
+        </section>
+        <section class="product">
+            <img src="Finalmouse-removebg-preview.png" alt="Product 2">
+            <h2>Finalmouse UltralightX Wireless</h2>
+            <p>₱10,450</p>
+            <button onclick="addToCart('Finalmouse UltralightX Wireless', 10450)">Add to Cart</button>
+        </section>
+		<section class="product">
+            <img src="X2A.webp" alt="Product 3">
+            <h2>Pulsar X2A Ultralight Wireless Ambidextrous</h2>
+            <p>₱5,450</p>
+            <button onclick="addToCart('Pulsar X2A Ultralight Wireless Ambidextrous', 5450)">Add to Cart</button>
+        </section>
+		<section class="product">
+            <img src="Waizowl.webp" alt="Product 4">
+            <h2>Waizowl OGM Pro</h2>
+            <p>₱5,995</p>
+            <button onclick="addToCart('Waizowl OGM Pro', 5995)">Add to Cart</button>
+        </section>
+		<section class="product">
+            <img src="md2p.webp" alt="Product 5">
+            <h2>Glorious Model O 2 Pro</h2>
+            <p>₱4,695</p>
+            <button onclick="addToCart('Glorious Model O 2 Pro', 4695)">Add to Cart</button>
+        </section>
+		<section class="product">
+            <img src="Sora.webp" alt="Product 6">
+            <h2>Ninjusto Sora 4k</h2>
+            <p>₱5,650</p>
+            <button onclick="addToCart('Ninjusto Sora 4k', 5650)">Add to Cart</button>
+        </section>
+		<section class="product">
+            <img src="MXVert.webp" alt="Product 7">
+            <h2>Logitech MX Vertical Advanced</h2>
+            <p>₱4,795</p>
+            <button onclick="addToCart('Logitech MX Vertical Advanced', 4795)">Add to Cart</button>
+        </section>
+		<section class="product">
+            <img src="PWNG.webp" alt="Product 8">
+            <h2>PWNAGE Ultra Custom Symm 1 Gen 2.0</h2>
+            <p>₱3,695</p>
+            <button onclick="addToCart('PWNAGE Ultra Custom Symm 1 Gen 2.0', 3695)">Add to Cart</button>
+        </section>
+        <section class="product">
+            <img src="LogitechGProX.webp" alt="Product 9">
+            <h2>Logitech G Pro X Wireless Ultralight</h2>
+            <p>₱6,450</p>
+            <button onclick="addToCart('Logitech G Pro X Wireless Ultralight', 6450)">Add to Cart</button>
+        </section>
+    </main>
+    <div id="cart-popup" class="cart-popup">
+        <div class="cart">
+            <h2>Cart</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: <span class="cart-total">₱0</span></p>
+            <input type="text" id="user-name" placeholder="Enter Full Name"><br>
+            <br>
+            <input type="text" id="user-address" placeholder="Enter Full Address"><br>
+            <br>
+            <input type="text" id="user-number" placeholder="Enter Phone Number"><br>
+            <br>
+            <input type="text" id="discount-code" placeholder="Enter discount code">
+            <br>
+            <br>
+            <button class="apply-discount-button" onclick="applyDiscount()">Apply Discount</button>
+            <button class="checkout-button" onclick="checkoutAndClearCart()">Checkout</button>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <button class="exit-button" onclick="closeCartPopup()">Exit</button>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 DAGGIS. All rights reserved.</p>
+    </footer>
+</body>
+<script type="text/javascript" src="bagaboom.js"></script>
+</html>
